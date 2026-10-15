@@ -33,6 +33,7 @@ body {
   font-size: 17px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;   /* safety net against any sideways scroll */
 }
 img { max-width: 100%; display: block; }
 a { color: var(--blue-deep); }
@@ -128,17 +129,19 @@ a { color: var(--blue-deep); }
   pointer-events: none;
   z-index: 0;
 }
-.hero .inner > * { position: relative; z-index: 1; }
+.hero .inner > * { position: relative; z-index: 1; min-width: 0; }
 .eyebrow {
   display: inline-flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 8px;
   font-size: 13px;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--orange-deep);
   margin: 0 0 18px;
+  max-width: 100%;
 }
 .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--pink); }
 h1.headline {
