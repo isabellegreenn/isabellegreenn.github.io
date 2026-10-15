@@ -68,6 +68,10 @@ a { color: var(--blue-deep); }
   text-decoration: none;
   color: var(--ink);
 }
+.brand .ig-logo { width: 48px; height: 48px; display: block; }
+.footer-logo { display: inline-block; color: var(--cream); line-height: 0; }
+.footer-logo .ig-logo { width: 60px; height: 60px; display: block; }
+
 .nav-links { display: flex; flex-wrap: wrap; gap: 2px; }
 .nav-links a {
   text-decoration: none;
@@ -318,7 +322,7 @@ h2 {
 
 /* ---------- Footer ---------- */
 footer { background: var(--purple-deep); color: color-mix(in srgb, var(--cream) 78%, transparent); font-size: 14px; }
-footer .inner { padding-block: 26px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; }
+footer .inner { padding-block: 26px; display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between; align-items: center; }
 footer a { color: var(--yellow); text-decoration: none; }
 
 /* ---------- Events marquee (moving bar) ---------- */
